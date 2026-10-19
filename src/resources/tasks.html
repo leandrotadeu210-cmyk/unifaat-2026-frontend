@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./css/app.css">
   <script type="module" src="./js/app.ts"></script>
   <script type="module" src="./js/pages/tasks.ts"></script>
-<script type="module" src="./js/teste.ts"></script>
 </head>
 
 <body class="d-flex flex-column min-vh-100 bg-light">
@@ -23,10 +22,28 @@
 
     <section id="tasks-container" class="card shadow-sm p-4 flex-grow-1"></section>
 
-    <section id="add-task-section" class="card shadow-sm p-4 d-flex flex-column gap-2 text-center">
-      <h5>Nova Tarefa</h5>
-      <input type="text" id="task-input" class="form-control" placeholder="Digite a tarefa..." />
-      <button id="add-task-btn" class="btn btn-primary" type="button">Adicionar</button>
+    <section class="d-flex flex-column gap-3">
+
+      <!-- Alerta de sucesso da atribuição -->
+      <div id="assign-task-success" class="alert alert-success d-none" role="alert"></div>
+
+      <!-- Formulário: nova tarefa própria -->
+      <div class="card shadow-sm p-4 d-flex flex-column gap-2 text-center">
+        <h5>Nova Tarefa</h5>
+        <input type="text" id="task-input" class="form-control" placeholder="Digite a tarefa..." />
+        <button id="add-task-btn" class="btn btn-primary" type="button">Adicionar</button>
+      </div>
+
+      <!-- Botão: abrir modal para atribuir a outro usuário -->
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#assign-task-modal"
+      >
+        Nova tarefa para outro usuário
+      </button>
+
     </section>
 
   </main>
@@ -34,6 +51,91 @@
   <footer class="bg-primary text-white text-center py-3 mt-auto">
     <div class="small">Frontend 2026.2</div>
   </footer>
+
+  <!-- ══════════════════════════════════════════════════════════
+       Modal: Criar tarefa para outro usuário
+       ══════════════════════════════════════════════════════════ -->
+  <div
+    class="modal fade"
+    id="assign-task-modal"
+    tabindex="-1"
+    aria-labelledby="assign-task-modal-label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="assign-task-modal-label">Nova tarefa para outro usuário</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+
+        <div class="modal-body d-flex flex-column gap-3">
+
+          <!-- Nome da tarefa -->
+          <div>
+            <label for="assign-task-name" class="form-label fw-semibold">Nome da tarefa</label>
+            <input
+              type="text"
+              id="assign-task-name"
+              class="form-control"
+              placeholder="Ex.: Revisar relatório mensal"
+            />
+          </div>
+
+          <!-- Busca de usuário -->
+          <fieldset>
+            <legend class="form-label fw-semibold">Buscar usuário</legend>
+            <div class="d-flex gap-2">
+              <select id="assign-search-field" class="form-select" style="max-width: 180px;" aria-label="Campo de busca">
+                <option value="name">Nome</option>
+                <option value="email">E-mail</option>
+                <option value="job_title">Cargo</option>
+                <option value="city">Cidade</option>
+                <option value="state">UF</option>
+                <option value="bio">Bio</option>
+              </select>
+              <input
+                type="text"
+                id="assign-search-value"
+                class="form-control"
+                placeholder="Digite para buscar..."
+                aria-label="Valor de busca"
+              />
+              <button id="assign-search-btn" type="button" class="btn btn-secondary flex-shrink-0">
+                Buscar
+              </button>
+            </div>
+          </fieldset>
+
+          <!-- Resultados da busca -->
+          <div id="assign-search-results"></div>
+
+          <!-- Usuário selecionado -->
+          <div
+            id="assign-selected-user"
+            class="alert alert-info d-none mb-0"
+            role="status"
+          ></div>
+
+          <!-- Erro -->
+          <div
+            id="assign-modal-error"
+            class="alert alert-danger d-none mb-0"
+            role="alert"
+          ></div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" id="assign-task-submit" class="btn btn-primary">Criar tarefa</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

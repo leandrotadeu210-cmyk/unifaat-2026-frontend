@@ -65,3 +65,20 @@ export interface AuthCheckResult {
   authenticated: boolean;
   idUser?: number;
 }
+
+// ── Tipos de busca de usuários ───────────────────────────────
+
+/**
+ * Filtros aceitos pelo endpoint POST /users/search.
+ * Cada campo corresponde a um campo indexado no Elasticsearch.
+ * Apenas os campos informados são enviados (Partial).
+ */
+export interface UserSearchFilters {
+  name?: string;
+  email?: string;
+  job_title?: string;
+  bio?: string;
+  city?: string;
+  state?: string;
+  is_active?: boolean;
+}
