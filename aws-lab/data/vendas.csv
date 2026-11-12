@@ -1,0 +1,41 @@
+id_pedido,data_pedido,id_cliente,nome_cliente,email_cliente,produto,categoria,quantidade,preco_unitario,desconto,status,uf
+1,2024-01-15,101,Ana Silva,ana.silva@email.com,Notebook Dell,Eletronicos,1,3500.00,0.10,concluido,SP
+2,2024-01-16,102,Bruno Costa,bruno.costa@email.com,Mouse Sem Fio,Eletronicos,2,89.90,0.00,concluido,RJ
+3,2024-01-16,103,Carla Mendes,,Teclado Mecanico,eletronicos,1,250.00,0.05,CONCLUIDO,MG
+4,2024-01-17,101,Ana Silva,ana.silva@email.com,Notebook Dell,Eletronicos,1,3500.00,0.10,concluido,SP
+5,2024-01-18,104,Daniel Rocha,daniel@email.com,Monitor 24",Eletronicos,1,899.00,0.00,cancelado,RS
+6,2024-01-18,105,Eduardo Lima,eduardo@email.com,Cadeira Gamer,Moveis,1,1200.00,0.15,concluido,SP
+7,2024-01-19,106,Fernanda Dias,fernanda@email.com,Mesa Escritorio,Moveis,1,650.00,,concluido,BA
+8,2024-01-19,107,Gabriel Souza,gabriel@email.com,Headset Gamer,Eletronicos,1,350.00,0.00,concluido,SC
+9,2024-01-20,108,Helena Alves,,Webcam HD,eletronicos,2,220.00,0.00,pendente,CE
+10,2024-01-20,109,Igor Martins,igor@email.com,SSD 1TB,Eletronicos,1,480.00,0.00,concluido,GO
+11,2024-01-21,110,Julia Neves,julia@email.com,Impressora,Eletronicos,1,750.00,0.10,concluido,AM
+12,2024-01-21,102,Bruno Costa,bruno.costa@email.com,Mouse Sem Fio,Eletronicos,2,89.90,0.00,concluido,RJ
+13,2024-01-22,111,Karen Oliveira,karen@email.com,Frigobar,Eletrodomesticos,1,1100.00,0.05,concluido,SP
+14,2024-01-22,112,Leonardo Pinto,leo@email.com,Liquidificador,Eletrodomesticos,1,180.00,0.00,concluido,PR
+15,2024-01-23,113,Mariana Costa,mariana@email.com,Cafeteira,Eletrodomesticos,1,320.00,0.00,concluido,SP
+16,2024-01-23,114,Nicolas Ferreira,nicolas@email.com,Notebook Lenovo,Eletronicos,1,2800.00,0.08,concluido,MG
+17,2024-01-24,115,Olivia Santos,olivia@email.com,Tablet Samsung,Eletronicos,1,1500.00,0.00,concluido,RJ
+18,2024-01-24,116,Paulo Ribeiro,paulo@email.com,Smartphone,Eletronicos,1,2200.00,0.12,concluido,SP
+19,2024-01-25,117,Queila Batista,,Fone Bluetooth,Eletronicos,1,199.00,0.00,concluido,GO
+20,2024-01-25,118,Rafael Torres,rafael@email.com,Caixa de Som,Eletronicos,2,350.00,0.00,concluido,SC
+21,2024-01-26,119,Sandra Lima,sandra@email.com,Ar Condicionado,Eletrodomesticos,1,2500.00,0.10,concluido,SP
+22,2024-01-26,120,Thiago Melo,thiago@email.com,Ventilador,Eletrodomesticos,1,180.00,0.00,cancelado,PE
+23,2024-01-27,121,Ursula Dias,ursula@email.com,Aspirador,Eletrodomesticos,1,420.00,0.05,concluido,BA
+24,2024-01-27,122,Vitor Alves,vitor@email.com,Ferro de Passar,Eletrodomesticos,1,120.00,0.00,concluido,RS
+25,2024-01-28,101,Ana Silva,ana.silva@email.com,Mouse Sem Fio,Eletronicos,1,89.90,0.00,concluido,SP
+26,2024-01-28,123,Wagner Carmo,wagner@email.com,Notebook Acer,Eletronicos,1,3100.00,0.07,concluido,SP
+27,2024-01-29,124,Xuxa Pereira,xuxa@email.com,Smartwatch,Eletronicos,1,899.00,0.00,concluido,RJ
+28,2024-01-29,125,Yago Ramos,,Camera Digital,Eletronicos,1,1800.00,0.00,concluido,MG
+29,2024-01-30,126,Zelia Cunha,zelia@email.com,Fogao,Eletrodomesticos,1,1600.00,0.10,concluido,SP
+30,2024-01-30,127,Andre Nunes,andre@email.com,Geladeira,Eletrodomesticos,1,3200.00,0.15,concluido,SP
+31,2024-01-31,128,Beatriz Franco,,Maquina de Lavar,Eletrodomesticos,1,2800.00,0.00,concluido,GO
+32,2024-01-31,129,Caio Pereira,caio@email.com,Sofá,Moveis,-1,1900.00,0.00,concluido,SP
+33,2024-02-01,130,Daniela Ramos,daniela@email.com,Estante,Moveis,2,450.00,0.00,concluido,SC
+34,2024-02-01,131,Elias Souza,elias@email.com,Escrivaninha,Moveis,1,780.00,0.00,concluido,PR
+35,2024-02-02,132,Fabio Costa,fabio@email.com,Poltrona,Moveis,1,1100.00,0.05,concluido,SP
+36,2024-02-02,133,Gloria Matos,gloria@email.com,Notebook Dell,Eletronicos,1,99999.00,0.00,concluido,SP
+37,2024-02-03,134,Hugo Lima,,TV 55",Eletronicos,1,3800.00,0.10,concluido,RJ
+38,2024-02-03,135,Iris Neves,iris@email.com,Soundbar,Eletronicos,1,650.00,0.00,concluido,MG
+39,2024-02-04,136,Jonas Alves,jonas@email.com,Roteador,Eletronicos,1,280.00,0.00,concluido,SP
+40,2024-02-04,137,Karla Dias,karla@email.com,HD Externo,Eletronicos,1,320.00,0.00,concluido,GO

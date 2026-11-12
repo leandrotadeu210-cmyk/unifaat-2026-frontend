@@ -1,0 +1,19 @@
+# Terraform state e credenciais
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+
+# Credenciais AWS
+.env
+credentials
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+venv/
